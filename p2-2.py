@@ -1,4 +1,4 @@
-f = open('p3in.txt', "r")
+f = open('p2in.txt', "r")
 
 valid = 0
 for line in f:

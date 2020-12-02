@@ -1,4 +1,4 @@
-f = open('p3in.txt', "r")
+f = open('p2in.txt', "r")
 
 p3_input = {}
 
