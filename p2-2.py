@@ -6,8 +6,6 @@ for line in f:
 	(cmin,cmax) = count.split('-')
 	letter = letter.strip(':')
 	print(cmin,cmax,letter,password, end='')
-	cmin_found = False
-	cmax_found = False
 	if bool(letter == password[int(cmin)-1]) ^ bool(letter == password[int(cmax)-1]):
 		print("VALID\n")
 		valid = valid + 1
