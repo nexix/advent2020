@@ -18,9 +18,6 @@ for line in f.readlines():
 		passport_list.append(passport_dict)
 		passport_dict = {}
 
-if passport_dict:
-	passport_list.append(passport_dict)
-
 for passport in passport_list:
 	for key,value in passport.items():
 		passport_keys.append(key)

@@ -21,9 +21,6 @@ for line in f:
 		passport_list.append(passport_dict)
 		passport_dict = {}		
 
-if passport_dict:
-	passport_list.append(passport_dict)
-
 for passport in passport_list:
 	print(passport)
 	for key,value in passport.items():
@@ -83,19 +80,13 @@ for passport in passport_list:
 		passport_keys.append(key)
 	difference = [ele for ele in keys_required if not ele in passport_keys]
 	if difference:
-		#print("INVALID ::", difference)
 		invalid_pass += 1
 		pass
 	else:
 		print("VALID ::", difference)
 		valid_pass += 1
 	passport_keys = []
-	#print(valid_pass)
-	#input()
 
 print()
 print("TOTAL PASSPORTS ::", len(passport_list))
 print("VALID PASSPORTS ::",valid_pass)
-#print(invalid_pass)
-#print(invalid_pass + valid_pass)
-#print(json.dumps(passport_list, indent=2))
